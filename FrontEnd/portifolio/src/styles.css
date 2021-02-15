@@ -32,10 +32,12 @@
     color: #fff;
     font-size: 35px;
     font-weight: 600;
+    
 
 }
 .navbar .logo a span{
     color:crimson;
+    
 
 }
 .navbar .menu li{
@@ -100,7 +102,7 @@
 .section{
     padding: 100px 0;
 }
-.about{
+.about , .project{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
 }
@@ -137,7 +139,8 @@
     transform: translateX(-50%);
 
 }
-.about .about-content {
+.about .about-content , 
+.project .proje-contet{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -193,10 +196,71 @@
 
 }
 
+/*Projects*/
+.project{
+    color: #fff;
+    background: #111;
+
+}
+.project .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 
+}
 
+.project .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 4px;
+    background:#fff;
+    transform: translateX(-50%);
 
+}
+.project .title::after{
+    content: "what i project";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    color: crimson;
+    padding: 5px;
+    background: #111;
+    transform: translateX(-50%);
+
+}
+.project .proje-content {
+    
+    background: #111;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.project .proje-content .card .box{
+    transition: all 0.3s ease;
+
+}
+.project .proje-content .card:hover .box{
+    transform: scale(1.05);
+    background: crimson;
+    
+
+}
+
+.project .proje-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+    color: #111;
+}
 
 
 
@@ -299,6 +363,10 @@
     .about .about-content .right{
         flex: 100%;
     }
+    .project .proje-content .card {
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
 }
 @media (max-width: 690px){
     .home .max-width{
@@ -317,7 +385,9 @@
         font-size: 20px;
         padding: 9px 25px;
     }
-    
+    .project .proje-content .card {
+        width: 100%;
+    }
 }
     @media (max-width: 500px){
        
