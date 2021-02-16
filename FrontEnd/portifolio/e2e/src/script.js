@@ -1,3 +1,4 @@
+
 $(document).ready(function(){
     $(window).scroll(function(){
         if(this.scrollY > 20){
@@ -12,4 +13,11 @@ $(document).ready(function(){
          $('.navbar .menu').toggleClass("active");
          $('.menu-btn i').toggleClass("active");
      })
+});
+var typed = new Typed(".typing",{
+    strings:["Web, Java Jr, Full Stack developer."],
+    typeSpeed:100,
+    backSpeed:60,
+    loop:true
+
 });

@@ -1,0 +1,28 @@
+.digitar {
+    font-size: 30pt;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.typing-animation {
+    animation: blinkCursor steps(40) 500ms infinite normal,
+     typing 2s steps(25) 1s normal both;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 20em;
+    }
+}
+
+@keyframes blinkCursor {
+    from {
+        border-right-color: black;
+    }
+    to {
+        border-right-color: transparent;
+    }
+}
