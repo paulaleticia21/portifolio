@@ -13,7 +13,7 @@
                     <label for="exampleInputnome"><b>Nome</b></label>
 
                     <div class="col-md-20 mb-4">
-                        <input  name="nome" type="text" class="form-control" id="nome"
+                        <input [(ngModel)]='contato.nome'  name="nome" type="text" class="form-control" id="nome"
                             aria-describedby="nomeHelp" placeholder="Digite seu nome" />
                         <small id="nomeHelp" class="form-text text-muted"></small>
                     </div>
@@ -21,7 +21,7 @@
                 <div class="form-group">
                     <label for="exampleInputEmail1"><b>Email</b></label>
                     <div class="col-md-20 mb-4">
-                        <input  name="email" type="text" class="form-control" id="email"
+                        <input [(ngModel)]='contato.email' name="email" type="text" class="form-control" id="email"
                             aria-describedby="emailHelp" placeholder="Digite seu Email" />
                         <small id="emailHelp" class="form-text text-muted"></small>
                     </div>
@@ -29,9 +29,9 @@
 
                 <div class="form-group">
                     <label for="exampleFormControlTextarea1">Digite o seu Texto aqui</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <textarea [(ngModel)]='contato.texto' name ="texto" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                 </div>
-                <button type="button" class="btn btn-outline-dark" >Enviar</button>
+                <button type="button" class="btn btn-outline-dark" (click)='cadastrar()' >Enviar</button>
             </form>
         </div>
 
