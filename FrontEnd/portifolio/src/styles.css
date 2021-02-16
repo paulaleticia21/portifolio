@@ -102,7 +102,7 @@
 .section{
     padding: 100px 0;
 }
-.about , .project{
+.about , .project , .skills{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
 }
@@ -140,7 +140,7 @@
 
 }
 .about .about-content , 
-.project .proje-contet{
+.project .proje-contet , .skills .skills-content{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -261,10 +261,124 @@
     margin: 10px 0 7px 0;
     color: #111;
 }
+/*Skills*/
+
+.skills .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 
+}
 
+.skills .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 4px;
+    background:#111;
+    transform: translateX(-50%);
 
+}
+.skills .title::after{
+    content: "what i Know";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    color: crimson;
+    padding: 5px;
+    background: #ffff;
+    transform: translateX(-50%);
+
+}
+.skills .skills-content .column{
+    width:  calc(50% - 30px);
+}
+.skills .skills-content .left .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    
+
+}
+.skills .skills-content .right .info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.skills .skills-content .card .bars{
+    margin-bottom: 15px;
+}
+.skills .skills-content .right .span{
+    margin-bottom: 15px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.skills .skills-content .right .line{
+    height: 5px;
+    width: 100%;
+    background: lightblue;
+    position: relative;
+}
+.skills .skills-content .right .line::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+  
+    left: 0;
+    background: crimson;
+
+}
+
+.skills .skills-content .right .html::before{
+
+    width: 85%;
+}
+
+.skills .skills-content .right .css::before{
+
+    width: 70%;
+}
+.skills .skills-content .right .typescript::before{
+
+    width: 85%;
+}
+.skills .skills-content .right .javascript::before{
+
+    width: 50%;
+}
+.skills .skills-content .right .bootstrap::before{
+
+    width: 90%;
+}
+.skills .skills-content .right .angular::before{
+
+    width: 75%;
+}
+.skills .skills-content .right .java::before{
+
+    width: 65%;
+}
+.skills .skills-content .right .springboot::before{
+
+    width: 75%;
+}
+.skills .skills-content .right .mysql::before{
+
+    width: 70%;
+}
+.skills .skills-content .right .git::before{
+
+    width: 85%;
+}
 
 
 
@@ -367,6 +481,10 @@
         width: calc(50% - 10px);
         margin-bottom: 20px;
     }
+    .skills .skills-content .column{
+        width: 100%;
+        margin-bottom: 35px;
+    }
 }
 @media (max-width: 690px){
     .home .max-width{
@@ -385,7 +503,7 @@
         font-size: 20px;
         padding: 9px 25px;
     }
-    .project .proje-content .card {
+    .project .proje-content .card,.skills .skills-content .column {
         width: 100%;
     }
 }
