@@ -4,11 +4,30 @@
     overflow: hidden;
 }
 
-.typing-animation {
+.typing-animation-hello {
     animation: blinkCursor steps(40) 500ms infinite normal,
      typing 2s steps(25) 1s normal both;
 }
-
+.typing-animation-paula {
+    animation: blinkCursor steps(40) 500ms infinite normal,
+     typing 2s steps(25) 2s normal both;
+}
+.typing-animation-web {
+    animation: blinkCursor steps(40) 500ms infinite normal,
+     typing 2s steps(25) 2.5s normal both;
+}
+.home{
+  
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    overflow: hidden;
+    background:linear-gradient(45deg,#e40017, #f4c983,#5b6d5b, #bbf1fa);
+    background-size: 300% 300%;
+    animation: colors 4s ease infinite;
+   
+    
+  }
 @keyframes typing {
     from {
         width: 0;
@@ -25,4 +44,17 @@
     to {
         border-right-color: transparent;
     }
+}
+
+@keyframes colors{
+    8%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+
 }

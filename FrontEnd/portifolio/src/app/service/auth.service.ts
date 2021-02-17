@@ -12,10 +12,13 @@ export class AuthService {
     private http: HttpClient
   ) { }
 
+    //https://paula-leticia.herokuapp.com
+  
   enviar(contato: Contato): Observable<Contato>{
-    return this.http.post<Contato>('http://localhost:8080/contatos/post', contato)
+    return this.http.post<Contato>('https://paula-leticia.herokuapp.com/contatos/post', contato)
 
 
+    
 
   }
 }
