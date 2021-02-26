@@ -1,5 +1,5 @@
 .digitar {
-    font-size: 30pt;
+    font-size: 25pt;
     white-space: nowrap;
     overflow: hidden;
 }
@@ -10,11 +10,11 @@
 }
 .typing-animation-paula {
     animation: blinkCursor steps(40) 500ms infinite normal,
-     typing 2s steps(25) 2s normal both;
+     typing 2s steps(25) 1.5s normal both;
 }
 .typing-animation-web {
     animation: blinkCursor steps(40) 500ms infinite normal,
-     typing 2s steps(25) 2.5s normal both;
+     typing 2s steps(25) 1.8s normal both;
 }
 .home{
   

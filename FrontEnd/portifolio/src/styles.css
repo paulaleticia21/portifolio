@@ -90,7 +90,7 @@ html{
 
 }
 .home .home-content .text-2{
-    font-size: 75px;
+    font-size: 90px;
     font-weight: 600;
     margin-left: -3px;
 
@@ -229,8 +229,6 @@ html{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     
   
-
-
 }
 
 .project .title::before{
@@ -246,7 +244,7 @@ html{
 
 }
 .project .title::after{
-    content: "My";
+    content: "Project";
     position: absolute;
     bottom: -12px;
     left: 50%;
@@ -323,6 +321,7 @@ html{
     width:  calc(50% - 30px);
 }
 .skills .skills-content .left .text{
+    color: crimson;
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 10px;
@@ -402,11 +401,11 @@ html{
 }
 .skills .skills-content .right .heroku::before{
 
-    width: 60%;
+    width: 65%;
 }
 .skills .skills-content .right .postman::before{
 
-    width: 65%;
+    width: 60%;
 }
 .skills .skills-content .card{
     width: calc(50% - 10px);
@@ -419,6 +418,7 @@ html{
 @media (max-width: 1300px) {
     .home .max-width{
         margin-left: 0px;
+        justify-content: center;
     }
 }
 
@@ -491,8 +491,9 @@ html{
 }
 
 @media (max-width: 690px) {
-    .max-width{
+    .max-width,.contact-img img ,.modal-body img{
         padding: 0 23px;
+        justify-content: center;
     }
     .home .home-content .text-2{
         font-size: 60px;
@@ -523,24 +524,20 @@ html{
     
 }
 @media (max-width: 414px) {
-    .max-width, .proje-content ,{
+    .max-width, .proje-content  {
         width: 100vw!important;
     }
     .home .home-content  .text-2{
         font-size: 30px;
     }
     .home .home-content .text-3{
-        font-size: 19px;
+        font-size: 15px;
     }
     .home .home-content a{
         font-size: 20px;
         padding: 10px 20px;
     } 
-    .project  .card{
-
-       
-       
-    }
+   
     .project .proje-content{
         width: 97vw!important;
         justify-content: center;
@@ -551,8 +548,22 @@ html{
         margin: 0!important;
 
     }
+    .project .proje-content .card {
+        margin-left: 25%;
+        justify-content: center;
+        margin-right: 10%;
+}
+ 
+    .contact-img img ,.modal-body img ,.forms-container {
+      
+    justify-content: center;
+    margin-right: 25%;
+       
+       
+    }
+    
+    
 }
 
-    /*animação cores*/
 
    
