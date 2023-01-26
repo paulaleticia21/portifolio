@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Contato } from '../model/contato';
+import { AuthService } from '../service/auth.service';
 
 @Component({
   selector: 'app-contact',
@@ -7,9 +9,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactComponent implements OnInit {
 
-  constructor() { }
+  contato:Contato = new Contato()
+  
+  constructor(
+    private serviceContato : AuthService
+    
 
-  ngOnInit(): void {
+  ) { }
+
+  ngOnInit(){
+    window.scroll(0,0)
+  
   }
-
+    cadastrar(){
+        this.serviceContato.enviar(this.contato).subscribe(()=>{
+        alert('Mensagem enviada com sucesso')
+      })
+    }
 }
